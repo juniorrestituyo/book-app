@@ -1,17 +1,23 @@
+from encodings import search_function
 from multiprocessing import context
 from django.shortcuts import render, redirect
 from .models import Book
 from .forms import BookForm
+from django.db.models import Q
+from .utils import searchBook
 
 
 def home(request):
     return render(request, "bookapp/home.html")
 
+
 def mainPage(request):
-    book = Book.objects.all()
+    book, search_query = searchBook(request)
+
 
     context = {
         "book": book,
+        "search_query": search_query,
     }
     return render(request, "bookapp/mainPage.html", context)
 
