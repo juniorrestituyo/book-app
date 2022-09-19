@@ -1,11 +1,31 @@
 {% extends 'main.html' %}
 {% block content %}
 
-<h1>Book</h1>
-<a href="{% url 'mainPage' %}">Back</a>
-<a href="{% url 'edit-book' book.id %}">Edit</a>
-<p>{{book.title}}</p>
-<p>{{book.author}}</p>
-<p>{{book.status}}</p>
+<section class="contaner-create">
+    <div class="header-back">
+        <a href="{% url 'mainPage' %}">Books</a>
+        <p>&#62;</p>
+        <p>Book</p>
+    </div> 
+    <div class="header">
+        <h3>Book</h3>
+        <a href="{% url 'edit-book' book.id %}" class="btn-edit btn-header">Edit</a>
+    </div >
+    
+    <div class="form-view">
+        <h4>Title:</h4>
+        <p>{{book.title}}</p>
+    </div>
+
+    <div class="form-view">
+        <h4>Author:</h4>
+        <p>{{book.author}}</p>
+    </div>
+
+    <div class="form-view">
+        <h4>Status:</h4>
+        <p>{{book.status}}</p>
+    </div>
+</section>
 
 {% endblock content %}

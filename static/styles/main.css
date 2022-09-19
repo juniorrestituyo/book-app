@@ -45,6 +45,36 @@ body{
     padding-top: 30px;
 }
 
+.home-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.home{
+    margin: auto;
+    width: auto;
+}
+
+.home h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-container a{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+
 .contaner-create{
     background-color: #fff;
     max-width: 550px;
@@ -91,6 +121,15 @@ img{
     font-size: 12px;
     text-decoration: none;
     padding: 8px 10px;
+    border-radius: 25px;
+}
+
+.btn-edit{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
     border-radius: 25px;
 }
 
@@ -186,6 +225,24 @@ header, .row {
     text-decoration: none;
     color: #999999;
 }
+
+
+.form-view h4{
+    margin: 0;
+}
+
+.form-view p{
+    font-size: 12px;
+}
+
+.form-view{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 0 0 20px;
+    
+}
+
 
 
 .header-back {

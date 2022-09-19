@@ -35,6 +35,35 @@ body{
     margin: 0 auto;
 }
 
+.home-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.home{
+    margin: auto;
+    width: auto;
+}
+
+.home h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.home-container a{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
 .container{
     background-color: #fff;
     max-width: 1000px;
@@ -203,6 +232,22 @@ header, .row {
     font-size: 12px;
     text-decoration: none;
     color: #000;
+}
+
+.form-view h4{
+    margin: 0;
+}
+
+.form-view p{
+    font-size: 12px;
+}
+
+.form-view{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 0 0 20px;
+    
 }
 
 .form{

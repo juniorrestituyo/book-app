@@ -3,6 +3,10 @@ from django.shortcuts import render, redirect
 from .models import Book
 from .forms import BookForm
 
+
+def home(request):
+    return render(request, "bookapp/home.html")
+
 def mainPage(request):
     book = Book.objects.all()
 
