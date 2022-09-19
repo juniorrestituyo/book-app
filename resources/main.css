@@ -45,6 +45,16 @@ body{
     padding-top: 30px;
 }
 
+.contaner-create{
+    background-color: #fff;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
 img{
     max-width: 30px;
 }
@@ -120,4 +130,47 @@ header, .row {
 .pagination a{
     text-decoration: none;
     color: #999999;
+}
+
+
+.header-back {
+    display: flex;
+    width: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.header-back p{
+    font-size: 12px;
+}
+
+.header-back a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.form{
+    display: flex;
+    position: relative;
+    margin: 40px 0;
+    font-size: 12px;
+}
+
+.form input[type="text"]{
+    max-width: 400px;
+    padding: 5px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+}
+
+select{
+    width: 415px;
+    padding: 5px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
 }
