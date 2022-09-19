@@ -1,0 +1,239 @@
+body{
+    background-color: #F2F2F2;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.nav-btns{
+    max-width: 1100px;
+    margin: 20px auto 30px auto;
+    position: relative;
+}
+
+.nav-btns a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-home{
+    position: absolute;
+}
+
+.btn-books{
+    position: absolute;
+    left: 50px;
+}
+
+.nav-img{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.contaner-create{
+    background-color: #fff;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.contaner-delete{
+    background-color: #fff;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+img{
+    max-width: 30px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.btn-header{
+    margin-left: auto;
+}
+
+.btn-delete{
+    margin-left: 335px;
+}
+
+.btn-cancel{
+    margin-left: 190px;
+}
+
+.btn-d{
+    color: #999999;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 25px;
+}
+
+.btn-can{
+    border: solid #000 1px;
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.btn-con{
+    background-color: #1a75ff;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.btn-save{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.search{
+    margin-top: 20px;
+    width: auto;
+}
+
+input[type="text"]{
+    width: 95%;
+    padding: 6px 6px;
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+hr{
+    border-style: solid none none none;
+    color: #999999;
+    max-width: 965px;
+    margin: 15px auto 0 auto;
+}
+
+
+header, .row {
+    display: flex; 
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  
+  .col {
+    flex: 1; 
+}
+
+  .col-view{
+    padding-left: 70px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.pagination{
+    display: flex;
+    width: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.pagination p{
+    font-size: 12px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #999999;
+}
+
+
+.header-back {
+    display: flex;
+    width: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.header-back p{
+    font-size: 12px;
+}
+
+.header-back a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.form{
+    display: flex;
+    position: relative;
+    margin: 40px 0;
+    font-size: 12px;
+}
+
+.form input[type="text"]{
+    max-width: 400px;
+    padding: 5px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+}
+
+select{
+    width: 415px;
+    padding: 5px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+}
+
+
+.delete-text{
+    margin: 20px 0 30px 0;
+    width: auto;
+}
+
+.delete-text p{
+    font-size: 12px;
+}
