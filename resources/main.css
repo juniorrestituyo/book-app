@@ -73,7 +73,7 @@ img{
 }
 
 input[type="text"]{
-    width: 950px;
+    width: 95%;
     padding: 6px 6px;
     display: block;
     margin: 0 auto;
@@ -83,7 +83,7 @@ input[type="text"]{
 hr{
     border-style: solid none none none;
     color: #999999;
-    width: 965px;
+    max-width: 965px;
     margin: 15px auto 0 auto;
 }
 
