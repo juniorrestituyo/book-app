@@ -1,6 +1,7 @@
 from multiprocessing import context
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Book
+from .forms import BookForm
 
 def mainPage(request):
     book = Book.objects.all()
@@ -22,8 +23,17 @@ def viewBook(request, pk):
 
 def addBook(request):
     page = "add"
+    form = BookForm()
+
+    if request.method == "POST":
+        form = BookForm(request.POST)
+        form.save()
+        
+        return redirect("mainPage")
+
     context = {
         "page": page,
+        "form": form,
     }
     return render(request, "bookapp/add_edit.html", context)
 
