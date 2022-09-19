@@ -116,7 +116,8 @@ img{
     background-color: #000;
     color: #fff;
     font-size: 12px;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
     padding: 10px 12px;
     border-radius: 25px;
 }
@@ -207,12 +208,13 @@ header, .row {
 
 .form{
     display: flex;
+    align-items: center;
     position: relative;
     margin: 40px 0;
     font-size: 12px;
 }
 
-.form input[type="text"]{
+.form-input{
     max-width: 400px;
     padding: 5px;
     font-style: italic;
@@ -220,7 +222,7 @@ header, .row {
     right: 0;
 }
 
-select{
+.form-select{
     width: 415px;
     padding: 5px;
     font-style: italic;

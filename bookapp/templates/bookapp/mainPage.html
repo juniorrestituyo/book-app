@@ -22,7 +22,7 @@
     <hr>
     <div class="row">
       <div class="col"><a href="{% url 'view-book' b.id %}" class="col-view">View</a></div>
-      <div class="col">{{b.title}}</div>
+      <div class="col">{{b.title|slice:"20"}}</div>
       <div class="col">{{b.author}}</div>
       <div class="col">{{b.status}}</div>
       <div class="col">{{b.checked}}</div>
