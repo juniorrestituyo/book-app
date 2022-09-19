@@ -55,6 +55,16 @@ body{
     padding-top: 30px;
 }
 
+.contaner-delete{
+    background-color: #fff;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
 img{
     max-width: 30px;
 }
@@ -72,6 +82,10 @@ img{
     margin-left: 335px;
 }
 
+.btn-cancel{
+    margin-left: 190px;
+}
+
 .btn-d{
     color: #999999;
     font-size: 12px;
@@ -80,12 +94,39 @@ img{
     border-radius: 25px;
 }
 
+.btn-can{
+    border: solid #000 1px;
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.btn-con{
+    background-color: #1a75ff;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
+.btn-save{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 25px;
+}
+
 .btn{
     background-color: #000;
     color: #fff;
     font-size: 12px;
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 10px 12px;
     border-radius: 25px;
 }
 
@@ -185,4 +226,14 @@ select{
     font-style: italic;
     position: absolute;
     right: 0;
+}
+
+
+.delete-text{
+    margin: 20px 0 30px 0;
+    width: auto;
+}
+
+.delete-text p{
+    font-size: 12px;
 }
