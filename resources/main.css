@@ -1,31 +1,124 @@
 body{
     background-color: #F2F2F2;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
     background-color: #fff;
-    padding: 50px;
+    padding: 20px;
 }
 
-.navbtn{
-    display: flex;
-    max-width: 600px;
-    background-color: yellow;
+.nav-btns{
+    max-width: 1100px;
+    margin: 20px auto 30px auto;
+    position: relative;
+}
+
+.nav-btns a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-home{
+    position: absolute;
+}
+
+.btn-books{
+    position: absolute;
+    left: 50px;
+}
+
+.nav-img{
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .container{
     background-color: #fff;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 2em;
     border-radius: 5px;
-    padding: 2em;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+img{
+    max-width: 30px;
+}
+
+.header{
     display: flex;
+    align-items: center;
 }
 
-.table{
-    background-color: yellow;
-    margin: auto;
+.btn-header{
+    margin-left: auto;
 }
 
+.btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 25px;
+}
+
+.search{
+    margin-top: 20px;
+    width: auto;
+}
+
+input[type="text"]{
+    width: 950px;
+    padding: 6px 6px;
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.books-container {
+    display: flex;
+    justify-content: end;
+    width: auto;
+    padding-top: 20px;
+}
+
+.books-b{
+    display: flex;
+    justify-content: start;
+    width: auto;
+}
+
+.head-div{
+    font-size: 12px;
+    margin: 0 90px;
+}
+
+hr{
+    border-style: solid none none none;
+    color: #999999;
+    width: 965px;
+    margin: 15px auto 0 auto;
+}
+
+
+
+header, .row {
+    display: flex;  /* aligns all child elements (flex items) in a row */
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  
+  .col {
+    flex: 1;        /* distributes space on the line equally among items */
+  }
+
+  .col-view{
+    padding-left: 70px;
+    text-decoration: none;
+    color: #999999;
+  }

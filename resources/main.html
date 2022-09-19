@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,67 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="navbar">
-        <div class="nav-btn">
-            <a href="#">Home</a>
-            <a href="#">Books</a>
-        </div>
-    </div>
-    
-    <div class="container">
-        <h3>Books</h3>
-        <button type="button" class="btn">Create New</button>
-        <input type="text" placeholder="Search title">
 
-    
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">TITLE</th>
-                <th scope="col">AUTHOR</th>
-                <th scope="col">STATUS</th>
-                <th scope="col">CHECKED OUT BY</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"><a href="#">View</a></th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row"><a href="#">View</a></th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row"><a href="#">View</a></th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
+<body>
+  
+    <section class="navbar">
+      <div class="nav-img">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png"></a>
+      </div>
+      <div class="nav-btns">
+          <a href="#" class="btn-home">Home</a>
+          <a href="#" class="btn-books">Books</a>
+      </div>
+    </section>
+
+    <section class="container">
+        <div class="header">
+          <h3>Books</h3>
+          <a href="#" class="btn btn-header">Create New</a>
+        </div >
+
+        <div class="search">
+          <input type="text" placeholder="Search title">
+        </div>
+      
+        <header>
+          <div class="col"></div>
+          <div class="col">TITLE</div>
+          <div class="col">AUTHOR</div>
+          <div class="col">STATUS</div>
+          <div class="col">CHECKED OUT BY</div>
+        </header>
+        <hr>
+        <div class="row">
+          <div class="col"><a href="#" class="col-view">View</a></div>
+          <div class="col">1984</div>
+          <div class="col">George Orwell</div>
+          <div class="col">Available</div>
+          <div class="col">None</div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col"><a href="#" class="col-view">View</a></div>
+          <div class="col">Fahrenheit 451</div>
+          <div class="col">Ray Bradbury</div>
+          <div class="col">Available</div>
+          <div class="col">None</div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col"><a href="#" class="col-view">View</a></div>
+          <div class="col">The Great Gatsby</div>
+          <div class="col">F. Scott Fitzgerald</div>
+          <div class="col">Available</div>
+          <div class="col">None</div>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
