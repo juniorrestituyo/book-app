@@ -80,24 +80,6 @@ input[type="text"]{
     font-style: italic;
 }
 
-.books-container {
-    display: flex;
-    justify-content: end;
-    width: auto;
-    padding-top: 20px;
-}
-
-.books-b{
-    display: flex;
-    justify-content: start;
-    width: auto;
-}
-
-.head-div{
-    font-size: 12px;
-    margin: 0 90px;
-}
-
 hr{
     border-style: solid none none none;
     color: #999999;
@@ -106,19 +88,36 @@ hr{
 }
 
 
-
 header, .row {
-    display: flex;  /* aligns all child elements (flex items) in a row */
+    display: flex; 
     font-size: 12px;
     padding-top: 25px;
   }
   
   .col {
-    flex: 1;        /* distributes space on the line equally among items */
-  }
+    flex: 1; 
+}
 
   .col-view{
     padding-left: 70px;
     text-decoration: none;
     color: #999999;
-  }
+}
+
+.pagination{
+    display: flex;
+    width: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.pagination p{
+    font-size: 12px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #999999;
+}
