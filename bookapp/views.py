@@ -11,6 +11,15 @@ def mainPage(request):
     return render(request, "bookapp/mainPage.html", context)
 
 
+def viewBook(request, pk):
+    book = Book.objects.get(id=pk)
+
+    context = {
+        "book": book,
+    }
+    return render(request, "bookapp/view_book.html", context)
+
+
 def addBook(request):
     page = "add"
     context = {
