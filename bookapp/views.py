@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def pageBooks(request):
+    return render(request, "bookapp/books.html")
+
