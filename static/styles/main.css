@@ -83,7 +83,7 @@ img{
 }
 
 .btn-cancel{
-    margin-left: 190px;
+    margin-left: 195px;
 }
 
 .btn-d{
@@ -107,7 +107,8 @@ img{
     background-color: #1a75ff;
     color: #fff;
     font-size: 12px;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
     padding: 10px 12px;
     border-radius: 25px;
 }

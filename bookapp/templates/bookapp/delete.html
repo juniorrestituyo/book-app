@@ -1,12 +1,22 @@
 {% extends 'main.html' %}
 {% block content %}
 
-<h1>Delete Book</h1>
-<a href="{% url 'mainPage' %}">Back</a>
-<form action="" method="POST">
-    {% csrf_token %}
-    <p>Are you sure you want to delete this book?</p> 
-    <input type="submit" value="Submit">
-</form>
+<section class="contaner-delete">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+            <h3>Delete Book</h3>
+        </div>
+        <hr>
+        <div class="delete-text">
+            <p>Are you sure you want to delete this book?</p>
+        </div>
+
+        <div class="header">
+            <a href="{% url 'mainPage' %}" class="btn-can btn-cancel">Cancel</a>
+            <input type="submit" class="btn-con btn-header" value="Confirm">
+        </div >
+    </form>
+</section>
 
 {% endblock content %}
