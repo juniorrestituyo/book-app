@@ -2,13 +2,6 @@
 {% block content %}
 
 {% if page == "add" %}
-<!-- <h1>Add Book</h1>
-<a href="{% url 'mainPage' %}">Back</a>
-<form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input class="btn-save btn-header" type="submit" value="Submit">
-</form> -->
 
 <section class="contaner-create">
     <div class="header-back">
@@ -34,20 +27,33 @@
   </form>
 </section>
 
-
-
-
-
-
-
-
 {% else %}
-<h1>Edit Book</h1>
-<form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="Submit">
-</form>
+
+<section class="contaner-create">
+    <div class="header-back">
+      <a href="#">Books</a>
+      <p>&#62;</p>
+      <a href="#">New</a>
+    </div> 
+  
+  <form class="add-new" method="POST">
+      {% csrf_token %}
+      <div class="header">
+        <h3>Edit Book</h3>
+        <a href="{% url 'delete-book' book.id %}" class="btn-d btn-delete">Delete</a>
+        <input type="submit" class="btn-save btn-header" value="Save">
+      </div >
+
+      {% for f in form %}
+      <div class="form">
+        {{f.label}}
+        {{f}}
+      </div>
+      {% endfor %}
+
+  </form>
+</section>
+
 {% endif %}
 
 {% endblock content %}

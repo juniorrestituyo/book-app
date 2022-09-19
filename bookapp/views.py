@@ -52,6 +52,7 @@ def editBook(request, pk):
     context = {
         "page": page,
         "form": form,
+        "book": book,
     }
     return render(request, "bookapp/add_edit.html", context)
 
