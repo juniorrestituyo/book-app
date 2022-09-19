@@ -20,8 +20,8 @@
         <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.title}}</p></td>
         <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.author}}</p></td>
         <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.status}}</p></td>
-        <td style="border: solid black 1px; padding: 2px 8px;"><a href="#">Edit</a></td>
-        <td style="border: solid black 1px; padding: 2px 8px;"><a href="#">Delete</a></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><a href="{% url 'edit-book' b.id %}">Edit</a></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><a href="{% url 'delete-book' b.id %}">Delete</a></td>
     </tr>
     {% endfor %}
 </table>

@@ -12,8 +12,9 @@
 {% else %}
 <h1>Edit Book</h1>
 <form action="" method="POST">
-    <label></label>
-    <input>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
 </form>
 {% endif %}
 

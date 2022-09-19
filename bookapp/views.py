@@ -27,9 +27,9 @@ def addBook(request):
 
     if request.method == "POST":
         form = BookForm(request.POST)
-        form.save()
-        
-        return redirect("mainPage")
+        if form.is_valid():
+            form.save()
+            return redirect("mainPage")
 
     context = {
         "page": page,
@@ -38,13 +38,29 @@ def addBook(request):
     return render(request, "bookapp/add_edit.html", context)
 
 
-def editBook(request):
+def editBook(request, pk):
     page = "edit"
+    book = Book.objects.get(id=pk)
+    form = BookForm(instance=book)
+
+    if request.method == "POST":
+        form = BookForm(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+            return redirect("mainPage")
+
     context = {
         "page": page,
+        "form": form,
     }
     return render(request, "bookapp/add_edit.html", context)
 
 
-def deleteBook(request):
+def deleteBook(request, pk):
+    book = Book.objects.get(id=pk)
+
+    if request.method == "POST":
+        book.delete()
+        return redirect("mainPage")
+
     return render(request, "bookapp/delete.html")
