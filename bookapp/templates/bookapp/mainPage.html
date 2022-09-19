@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<h1>Books App</h1>
+
+<table style="border-collapse: collapse; text-align: left;">
+    <tr>
+        <th style="border: solid black 1px; padding: 2px 8px;"></th>
+        <th style="border: solid black 1px; padding: 2px 8px;">Books</th>
+        <th style="border: solid black 1px; padding: 2px 8px;">Author</th>
+        <th style="border: solid black 1px; padding: 2px 8px;">Status</th>
+        <th style="border: solid black 1px; padding: 2px 8px;"></th>
+        <th style="border: solid black 1px; padding: 2px 8px;"></th>
+    </tr>
+    {% for b in book %}
+    <tr>
+        <td style="border: solid black 1px; padding: 2px 8px;"><a href="#">View</a></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.title}}</p></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.author}}</p></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><p>{{b.status}}</p></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><a href="#">Edit</a></td>
+        <td style="border: solid black 1px; padding: 2px 8px;"><a href="#">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock content %}

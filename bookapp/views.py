@@ -1,8 +1,14 @@
+from multiprocessing import context
 from django.shortcuts import render
-
+from .models import Book
 
 def mainPage(request):
-    return render(request, "bookapp/books.html")
+    book = Book.objects.all()
+
+    context = {
+        "book": book,
+    }
+    return render(request, "bookapp/mainPage.html", context)
 
 
 def addBook(request):

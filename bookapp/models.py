@@ -7,12 +7,12 @@ class Book(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     author = models.CharField(max_length=200, null=True, blank=True)
     STATUS = (
-        ("a", "Available"),
-        ("n", "No available"),
+        ("Available", "Available"),
+        ("No available", "No available"),
     )
     status = models.CharField(max_length=200, choices=STATUS, null=True, blank=True)
     CHECKED = (
-        ("no", "None"),
+        ("None", "None"),
     )
     checked = models.CharField(max_length=200, choices=CHECKED, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
