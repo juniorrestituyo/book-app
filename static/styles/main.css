@@ -133,6 +133,8 @@ img{
     border-radius: 25px;
 }
 
+
+
 .btn-can{
     border: solid #000 1px;
     color: #000;
@@ -217,15 +219,16 @@ header, .row {
     gap: 10px;
 }
 
-.pagination p{
-    font-size: 12px;
-}
 
-.pagination a{
+.page-link{
+    font-size: 12px;
     text-decoration: none;
     color: #999999;
 }
 
+.btn-sub{
+    color: #1a75ff;
+}
 
 .form-view h4{
     margin: 0;

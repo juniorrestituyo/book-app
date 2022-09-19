@@ -8,7 +8,7 @@
     </div >
 
     <div class="search">
-      <form>
+      <form id="searchForm">
       <input type="text" name="search_query" value="{{search_query}}" placeholder="Search title">
       </form>
     </div>
@@ -31,11 +31,8 @@
     </div>
     {% endfor %}
 
-    <div class="pagination">
-      <a href="#">&#60;</a>
-      <p>Page 1</p>
-      <a href="#">&#62;</a>
-    </div>
+    {% include 'pagination.html' with queryset=book custom_range=custom_range %}
+
 </section>
 
 {% endblock content %}

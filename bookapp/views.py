@@ -1,10 +1,8 @@
-from encodings import search_function
-from multiprocessing import context
 from django.shortcuts import render, redirect
 from .models import Book
 from .forms import BookForm
-from django.db.models import Q
-from .utils import searchBook
+from .utils import searchBook, paginationBooks
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def home(request):
@@ -14,10 +12,12 @@ def home(request):
 def mainPage(request):
     book, search_query = searchBook(request)
 
+    custom_range, book = paginationBooks(request, book, 5)
 
     context = {
         "book": book,
         "search_query": search_query,
+        "custom_range": custom_range,
     }
     return render(request, "bookapp/mainPage.html", context)
 
